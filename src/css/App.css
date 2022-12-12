@@ -9,8 +9,26 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 0.15s linear;
   }
+}
+
+.head_banner {
+  position: fixed;
+  top: 0;
+  font-size: initial;
+  left: 80%;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #61dafb
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .App-header {

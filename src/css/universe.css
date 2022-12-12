@@ -1,0 +1,35 @@
+.universe {
+  display: flex;
+  flex-flow: column;
+}
+
+.sky {
+  height: 45%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: rgb(7, 3, 53);
+}
+
+.star {
+  position: absolute;
+  animation: move-star 100s ease-in-out infinite;
+  color: white;
+}
+
+@keyframes move-star {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-7000%);
+  }
+}
+
+.sea {
+  height: 55%;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  background-color: rgb(3, 30, 53);
+}
