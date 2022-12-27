@@ -118,7 +118,7 @@ const StarrySky = () => {
   });
   
   return (
-    <div className="contents">
+    <div className="sky">
       <canvas id="canvas" width="1400" height="1000"></canvas>
     </div>
   )
