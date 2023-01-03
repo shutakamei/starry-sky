@@ -3,6 +3,7 @@ import './css/App.css';
 import './css/universe.css';
 import StarrySky from './starry-sky';
 import Wave from 'react-wavify';
+import githubLogo from './images/github-mark-white.svg'
 
 function Universe() {
   return (
@@ -20,8 +21,11 @@ function Universe() {
         points: 3
       }}
       />
-      <div className="beach" />
-      {/* <img className='github-logo' src='./images/github-mark-white.svg' /> */}
+      <div className="beach">
+        <a className='github' href='https://github.com/shutakamei' target="_blank" rel="noopener noreferrer">
+          <img src={githubLogo} alt="github-logo" />
+        </a>
+      </div>
     </div>
   );
 }

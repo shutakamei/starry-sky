@@ -6,8 +6,8 @@ const StarrySky = () => {
     var ctx = canvas.getContext("2d");
     
     var stars = [];
-    var w = $('.contents').width();
-    var h = $('.contents').height();
+    var w = $('.sky').width();
+    var h = $('.sky').height();
     $('#canvas').attr('width', w);
     $('#canvas').attr('height', h);
     
@@ -119,7 +119,7 @@ const StarrySky = () => {
   
   return (
     <div className="sky">
-      <canvas id="canvas" width="1400" height="1000"></canvas>
+      <canvas id="canvas"></canvas>
     </div>
   )
 }

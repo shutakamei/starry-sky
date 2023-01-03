@@ -11,6 +11,8 @@
   margin: 0;
   padding: 0;
   background: black;
+  display: flex;
+  justify-content: center;
 }
 
 .star {
@@ -47,15 +49,17 @@
 
 .beach {
   position: absolute;
-  height: 22%;
+  height: 20%;
   top: 80%;
   width: 100%;
-  background: linear-gradient(rgb(3, 30, 53), #dcd3b2)
+  background: linear-gradient(rgb(3, 30, 53), #dcd3b2);
+  display: flex;
+  justify-content: center;
 }
 
-.github-logo {
-  position: absolute;
-  top: 90%;
+.github {
+  height: fit-content;
+  margin-top: auto;
 }
 
 #canvas {
