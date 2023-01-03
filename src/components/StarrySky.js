@@ -1,7 +1,8 @@
 import $ from 'jquery'
 
 const StarrySky = () => {
-  window.addEventListener('load', () => {
+  window.addEventListener('pageshow', () => {
+    console.log('🌋');
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
     
