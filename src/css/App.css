@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
 .App {
   text-align: center;
 }
@@ -28,6 +30,7 @@ a {
 
 .letter-space {
   transition: letter-spacing 1s;
+  margin-top: 40px;
 }
 
 .letter-space:hover {
@@ -63,13 +66,19 @@ body {
 }
 
 .info-wrapper {
-  top: 40%;
+  top: 30%;
   position: fixed;
   color: white;
   z-index: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   height: auto;
   font-size: 20px;
+}
+
+.myname {
+  font-family: 'Amatic SC', cursive;
+  font-size: 45px;
+  margin: 0;
 }

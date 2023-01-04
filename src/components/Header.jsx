@@ -15,6 +15,10 @@ function Header () {
       </header>
       <div className='info-wrapper'>
         <Link className='letter-space' to="profile">profile</Link>
+        <div>
+          <p className='myname'>shuta</p>
+          <p className='myname'>kamei</p>
+        </div>
         <Link className='letter-space' to="portfolio">portfolio</Link>
       </div>
     </React.Fragment>
