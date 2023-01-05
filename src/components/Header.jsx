@@ -1,7 +1,9 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { useAlert } from 'react-alert';
+// import {Link} from 'react-router-dom';
 
 function Header () {
+  const alert = useAlert();
   return(
     <React.Fragment>
       <header className="App-header">
@@ -14,12 +16,14 @@ function Header () {
         </ul>
       </header>
       <div className='info-wrapper'>
-        <Link className='letter-space' to="profile">profile</Link>
+        {/* <Link className='letter-space amatic-sc' to="profile">profile</Link> */}
+        <button className='letter-space amatic-sc button-revert' onClick={() => alert.show('近日公開予定😢')}>profile</button>
         <div>
-          <p className='myname'>shuta</p>
-          <p className='myname'>kamei</p>
+          <div className='amatic-sc name'>shuta</div>
+          <div className='amatic-sc name'>kamei</div>
         </div>
-        <Link className='letter-space' to="portfolio">portfolio</Link>
+        {/* <Link className='letter-space amatic-sc' to="portfolio">portfolio</Link> */}
+        <button className='letter-space amatic-sc button-revert' onClick={() => alert.show('まだ飛べないよ😢')}>portfolio</button>
       </div>
     </React.Fragment>
   )

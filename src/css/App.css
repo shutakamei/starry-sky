@@ -77,8 +77,17 @@ body {
   font-size: 20px;
 }
 
-.myname {
+.amatic-sc {
   font-family: 'Amatic SC', cursive;
   font-size: 45px;
+}
+
+.name {
+  font-size: 60px;
   margin: 0;
+}
+
+.button-revert {
+  color: white;
+  background: black;
 }

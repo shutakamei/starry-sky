@@ -38,19 +38,30 @@
   background: linear-gradient(black, rgb(3, 30, 53));
 }
 
-.sea {
+.deep-sea {
+  height: 19%;
+  position: absolute;
+  width: 100%;
+  top: 65%;
+  transform: rotate(180deg);
+  z-index: 2;
+  opacity: 0.8;
+}
+
+.shallow-sea {
   height: 20%;
   position: absolute;
   width: 100%;
   top: 65%;
   transform: rotate(180deg);
   z-index: 1;
+  opacity: 0.4;
 }
 
 .beach {
   position: absolute;
-  height: 20%;
-  top: 80%;
+  height: 35%;
+  top: 65%;
   width: 100%;
   background: linear-gradient(rgb(3, 30, 53), #dcd3b2);
   display: flex;
