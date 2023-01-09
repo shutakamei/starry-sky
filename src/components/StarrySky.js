@@ -1,8 +1,7 @@
 import $ from 'jquery'
 
 const StarrySky = () => {
-  window.addEventListener('load', () => {
-    console.log('🌋');
+  setTimeout (() => {
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
     
@@ -116,7 +115,7 @@ const StarrySky = () => {
       ctx.arc(trailX, trailY, star.size, 0, Math.PI*2);
       ctx.fill();
     }
-  });
+  }, 100);
   
   return (
     <div className="sky">
