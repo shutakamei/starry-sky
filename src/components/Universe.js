@@ -37,7 +37,7 @@ function Universe() {
         />
         <div className="beach">
           <a className='github' href='https://github.com/shutakamei' target="_blank" rel="noopener noreferrer">
-            <img src={githubLogo} alt="github-logo" />
+            <img className='github-logo' src={githubLogo} alt="github-logo" />
           </a>
         </div>
       </div>

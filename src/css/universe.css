@@ -76,3 +76,9 @@
 #canvas {
   display: block;
 }
+
+@media screen and (max-width:768px){
+  .github-logo {
+    height: 75px;
+  }
+}
