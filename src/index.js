@@ -8,7 +8,7 @@ import AlertTemplate from 'react-alert-template-basic';
 
 // optional configuration
 const options = {
-  timeout: 5000,
+  timeout: 2000,
   position: positions.BOTTOM_CENTER,
 }
 
