@@ -1,9 +1,8 @@
 import { useState, type FC } from 'react';
-import { useAlert } from 'react-alert';
+import { toast } from 'react-toastify';
 // import { Link } from 'react-router-dom';
 
 const Header: FC = () => {
-  const alert = useAlert();
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -32,7 +31,7 @@ const Header: FC = () => {
           disabled={isClicked}
           onClick={() => {
             handleClick();
-            alert.show('近日公開予定😢');
+            toast.info('近日公開予定😢', { closeButton: false });
           }}
         >
           profile
@@ -47,7 +46,7 @@ const Header: FC = () => {
           disabled={isClicked}
           onClick={() => {
             handleClick();
-            alert.show('まだ見れないよ🥲');
+            toast.info('まだ見れないよ🥲', { closeButton: false });
           }}
         >
           portfolio
