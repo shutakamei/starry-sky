@@ -8,8 +8,6 @@ https://shutakamei.com
 
 プロジェクトの推奨 Node.js バージョンは 22 系（`.nvmrc` 参照）です。`nvm use` や `.node-version` 互換ツールを使って `22.x` を利用してください。GitHub Actions も同バージョンでビルドするよう設定しています。
 
-> `react-alert` の peerDependencies が React 17 までしか対応していないため、`npm ci` 時には `--legacy-peer-deps` を指定しています（ワークフローも同様）。ローカルで `npm ci` を使う場合も `npm ci --legacy-peer-deps` としてください。
-
 ### 必要なGitHub Secrets
 
 | Secret名 | 用途 |

@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { useAlert } from 'react-alert';
+import { toast } from 'react-toastify';
 // import {Link} from 'react-router-dom';
 
 function Header () {
-  const alert = useAlert();
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -28,7 +27,7 @@ function Header () {
         {/* <Link className='letter-space amatic-sc' to="profile">profile</Link> */}
         <button className='letter-space amatic-sc button-revert' disabled={isClicked} onClick={() => {
           handleClick()
-          alert.show('近日公開予定😢')
+          toast.info('近日公開予定😢', { closeButton: false })
           }}>profile</button>
         <div>
           <div className='amatic-sc name'>shuta</div>
@@ -37,7 +36,7 @@ function Header () {
         {/* <Link className='letter-space amatic-sc' to="portfolio">portfolio</Link> */}
         <button className='letter-space amatic-sc button-revert' disabled={isClicked} onClick={() => {
           handleClick()
-          alert.show('まだ見れないよ🥲')
+          toast.info('まだ見れないよ🥲', { closeButton: false })
           }}>portfolio</button>
       </div>
     </React.Fragment>
