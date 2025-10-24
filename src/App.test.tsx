@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import type { ReactNode } from 'react';
-import App from './components/App';
+import { vi } from 'vitest';
+import App from './App';
 
-jest.mock('./router', () => ({
+vi.mock('./router', () => ({
   __esModule: true,
   BrowserRouter: ({ children }: { children: ReactNode }) => <div>{children}</div>,
   Routes: ({ children }: { children: ReactNode }) => <div>{children}</div>,

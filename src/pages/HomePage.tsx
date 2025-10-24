@@ -1,12 +1,12 @@
 import type { FC } from 'react';
-import '../css/App.css';
-import '../css/universe.css';
-import Header from './Header';
-import StarrySky from './StarrySky';
+import '../styles/home.css';
+import Header from '../components/layout/Header';
+import StarrySky from '../components/common/StarrySky';
 import Wave from 'react-wavify';
-import githubLogo from '../images/github-mark-white.svg';
 
-const Universe: FC = () => {
+const GITHUB_LOGO = '/assets/images/github-mark-white.svg';
+
+const HomePage: FC = () => {
   return (
     <>
       <Header />
@@ -42,7 +42,7 @@ const Universe: FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="github-logo" src={githubLogo} alt="github-logo" />
+            <img className="github-logo" src={GITHUB_LOGO} alt="github-logo" />
           </a>
         </div>
       </div>
@@ -50,4 +50,4 @@ const Universe: FC = () => {
   );
 };
 
-export default Universe;
+export default HomePage;
