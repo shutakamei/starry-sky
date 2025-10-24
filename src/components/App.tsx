@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import '../css/App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from '../router';
 import Profile from './Profile';
 import Portfolio from './Portfolio';
 import Universe from './Universe';
