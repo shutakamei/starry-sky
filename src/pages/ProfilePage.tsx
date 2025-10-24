@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 
-const Portfolio: FC = () => {
+const ProfilePage: FC = () => {
   return <h1>まだ見せられないよ！</h1>;
 };
 
-export default Portfolio;
+export default ProfilePage;

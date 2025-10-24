@@ -1,16 +1,21 @@
 import type { FC } from 'react';
+import './styles/app.css';
+import { BrowserRouter, Routes, Route } from './router';
+import HomePage from './pages/HomePage';
+import ProfilePage from './pages/ProfilePage';
+import PortfolioPage from './pages/PortfolioPage';
 
 const App: FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ul className="head_banner">
-          <li>
-            <a href="https://www.instagram.com/chiikawa__/">Instagram</a>
-          </li>
-        </ul>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/profile/" element={<ProfilePage />} />
+          <Route path="/portfolio/" element={<PortfolioPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 };
 
