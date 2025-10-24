@@ -6,7 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const container = document.getElementById('root');
+
+if (!container) {
+  throw new Error('Root container missing in index.html');
+}
+
+const root = ReactDOM.createRoot(container);
+
 root.render(
   <React.StrictMode>
     <App />
