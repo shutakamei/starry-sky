@@ -8,6 +8,30 @@ https://shutakamei.com
 
 プロジェクトの推奨 Node.js バージョンは 22 系（`.nvmrc` 参照）です。`nvm use` や `.node-version` 互換ツールを使って `22.x` を利用してください。GitHub Actions も同バージョンでビルドするよう設定しています。
 
+## ローカル開発
+
+```bash
+npm install
+npm run dev
+```
+
+Vite の開発サーバーが起動します。ホットリロードで変更内容を確認できます。
+
+## テスト・ビルド
+
+```bash
+# 型チェック
+npm run typecheck
+
+# 単体テスト（Vitest）
+npm run test -- --run
+
+# 本番ビルド
+npm run build
+```
+
+ビルド成果物は `dist/` に出力され、GitHub Actions から S3 へデプロイされます。
+
 ### 必要なGitHub Secrets
 
 | Secret名 | 用途 |
